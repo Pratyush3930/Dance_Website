@@ -1,0 +1,51 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style
+    style
+        include ../static/style.css
+
+block content 
+    section#introSection 
+      div.intro Welcome to Prat's Dance Academy 
+      div.quote DANCERS DON'T NEED WINGS TO FLY
+      
+    section.mission    
+      section#missionSection 
+        h2 Our Missions
+        div.card 
+          h3 Dance Confidence
+          div.card-box 
+            div.card-img 
+              img(src="/static/using/d1.png")
+
+            div.card-content
+              p This is the best dance academy of the universe.
+        div.card 
+          h3 Beautiful Dancing Form 
+          div.card-box 
+            div.card-img 
+              img(src="/static/using/d2.png")
+
+            div.card-content
+              p This is the best dance academy of the universe.
+        div.card 
+          h3 Experts Advice
+          div.card-box 
+            div.card-img 
+              img(src="/static/using/d3.png")
+
+            div.card-content
+              p This is the best dance academy of the universe.
+        
+
+    section#sponsorSection 
+      h2 Our Sponsors 
+      div#sponsors 
+        img(src="../static/sponsors/apple.png", alt="Sponsor Image" , Class = "spimage")
+        img(src="../static/sponsors/s2.png", alt="Sponsor Image" , Class = "spimage")
+        img(src="../static/sponsors/s1.png", alt="Sponsor Image" , Class = "spimage")
+        img(src="../static/sponsors/facebook.png", alt="Sponsor Image" , Class = "spimage")
+        
